@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ansari Mohammad Rehan - Portfolio</title>
+  <style>
+
+     * {margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif;}
+    body {background:#0d1117; color:#e6edf3; line-height:1.6;}
+    a {text-decoration:none; color:#00b4d8;}
+    header {background:#161b22; padding:20px; text-align:center;}
+    header h1 {color:#00b4d8;}
+    nav a {margin:0 15px; font-weight:bold;}
+    .container {width:90%; max-width:1100px; margin:auto; padding:40px 0;}
+
+
+    /* --- Reset & Fonts --- */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+    a {color: inherit; text-decoration: none;}
+
+    /* --- Hero Section --- */
+    header {
+      text-align: center;
+      padding: 20px 20px;
+      background: linear-gradient(120deg, #0d1117, #161b22);
+    }
+    header img {
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      border: 4px solid #00b4d8;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #00b4d8;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .typing {
+      color: #90e0ef;
+      font-weight: bold;
+    }
+
+    /* --- Section Layout --- */
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-left: 5px solid #00b4d8;
+      padding-left: 10px;
+    }
+
+    /* --- Cards & Grids --- */
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {transform: translateY(-5px);}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* --- Badges --- */
+    .badge {
+      display: inline-block;
+      background: #00b4d8;
+      color: #0d1117;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    /* --- Timeline --- */
+    .timeline {
+      border-left: 3px solid #00b4d8;
+      padding-left: 20px;
+    }
+    .timeline li {
+      margin-bottom: 15px;
+    }
+
+    /* --- Social Links --- */
+    .social a {
+      display: inline-block;
+      margin: 8px;
+      font-size: 1.2em;
+      background: #00b4d8;
+      color: #0d1117;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .social a:hover {background: #90e0ef;}
+
+    /* Skills */
+    .skills, .languages {display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; text-align:center;}
+    .card {background:#161b22; padding:20px; border-radius:12px; transition:0.3s;}
+    .card:hover {transform:translateY(-5px); box-shadow:0 0 15px #00b4d8;}
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #161b22;
+      color: #90e0ef;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <h1>Ansari Mohammad Rehan</h1>
+    <nav>
+        <div class="card"> 
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#languages">Languages</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+    <script>
+  if(localStorage.getItem("loggedIn") !== "true"){
+    window.location.href = "login.html"; // redirect if not logged in
+  }
+</script>
+
+  <!-- Hero -->
+  <header>
+    <img src="D:\My Data\Photos\IMG-20250622-WA0010.jpg" alt="Ansari Mohammad Rehan"/>
+    <h1>Ansari Mohammad Rehan</h1>
+    <p class="typing"></p>
+    <p>📍 Ahmedabad, India</p>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hello! I’m <strong>Ansari Mohammad Rehan</strong>, 19 years old from Danilimda, Ahmedabad. 
+      I’m pursuing a B.Tech in AI &amp; ML at JG University, 
+       I am a passionate CE engineering student with strong interest in 
+      programming, web development, and technology. I love solving problems, 
+      building creative projects, and continuously learning new skills. 
+      I also enjoy esports (BGMI, Valorant, Fortnite) in my free time.</p>
+    </div>
+  </section>
+
+  <!-- Quick Details -->
+  <section>
+    <h2>Quick Details</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Age:</strong> 19</li>
+        <li><strong>Education:</strong> Diploma in CE</li>
+        <li><strong>Languages Known:</strong> English, Hindi, Gujarati</li>
+        <li><strong>Hobbies:</strong> Coding, Esports (BGMI, Valorant, Fortnite)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="languages" class="container">
+    <h2>Programming Languages & Skills</h2>
+    <div class="grid">
+      <span class="card">HTML</span>
+      <span class="card">CSS</span>
+      <span class="card">JavaScript</span>
+      <span class="card">C</span>
+      <span class="card">C++</span>
+      <span class="card">Python</span>
+      <span class="card">Java</span>
+    </div>
+  </section>
+
+  <!-- Strengths -->
+  <section id="skills" class="container">
+    <h2>Strengths & Soft Skills</h2>
+    <div class="grid">
+      <div class="card">Problem Solving & Logical Thinking</div>
+      <div class="card">Teamwork and Collaboration</div>
+      <div class="card">Leadership & Initiative</div>
+      <div class="card">Adaptability and Quick Learner</div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section>
+    <h2>Achievements & Certifications</h2>
+    <div class="card timeline">
+      <ul>
+        <li>Passed SSC board in 2022 with 82.33%</li>
+      <li>Diploma in Computer Engineering – R.C. Technical Institute (CGPA: 8.05)</li>
+      <li>Currently pursuing B.Tech in AI &amp; ML – JG University</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section>
+    <h2>Future Goals</h2>
+    <div class="card">
+      <p>My future goal is to become a <strong>Full Stack Developer</strong> and explore 
+      <strong>AI/ML technologies</strong>. I aim to work on impactful projects and 
+      contribute to open-source communities.</p>
+    </div>
+  </section>
+
+  <!-- Gaming -->
+  <section>
+    <h2>Gaming & Esports</h2>
+    <div class="grid">
+      <div class="card">🎮 BGMI</div>
+      <div class="card">🎮 Valorant</div>
+      <div class="card">🎮 Fortnite</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="project" class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">🌐 Personal Portfolio Website</div>
+      <div class="card">🔐 Login & Signup System (PHP)</div>
+      <div class="card">🧳 Tour & Travel Management System</div>
+      <div class="card">💻 Java Programs demonstrating core concepts</div>
+      <div class="card">📞 Calling App</div>
+      <div class="card">📲 Translate App</div>
+      <div class="card">✔️ Autocorrect Tool Using NLP</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>📧 Email: <a href="mailto:ansarimohammadrehan2@gmail.com">ansarimohammadrehan2@gmail.com</a></p>
+      <p>📞 Mobile: <a href="tel:+917801818753">+91 78018 18753</a></p>
+      <div class="social">
+        <a href="https://github.com/REHANLT" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/mohammad-rehan-ansari-3b36842b3/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/_itz__rehan__01/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+  © 2025 Ansari Mohammad Rehan | Portfolio Website |
+  <a href="#" onclick="logout()">Logout</a>
+</p>
+<script>
+  function logout(){
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+
+  </footer>
+
+  <!-- Typing Animation JS -->
+  <script>
+    const text = ["B.Tech Student", "Programmer", "Tech Enthusiast"];
+    let i = 0, j = 0, current = "", isDeleting = false;
+    function type() {
+      current = text[i];
+      document.querySelector(".typing").textContent = 
+        current.substring(0, j) + (j < current.length ? "|" : "");
+      if (!isDeleting && j < current.length) { j++; }
+      else if (isDeleting && j > 0) { j--; }
+      else if (!isDeleting && j === current.length) { isDeleting = true; setTimeout(type, 1000); return; }
+      else if (isDeleting && j === 0) { isDeleting = false; i = (i+1)%text.length; }
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+    type();
+  </script>
+</body>
+</html>
